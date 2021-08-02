@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes sliding {
+        /* from {
+            background-color: limegreen;
+        } */
+        0% {
+            background-color: maroon;
+            left: 0;
+            top: 0;
+            transform: scale(0.5);
+        }
+        25% {
+            top: 300px;
+            background-color: mediumblue;
+            transform: scale(0.5);
+        }
+        50% {
+            top: 0;
+            background-color: yellow;
+        }
+        75% {
+            top: 300px;
+            background-color: mediumblue;
+            transform: scale(0.5);
+        }
+        /* to {
+            background-color: magenta;
+        } */
+        100% {
+            background-color: mediumaquamarines;
+            left: 300px;
+            top: 0%;
+        }
+    }
+    
+    .stage {
+        width: 400px;
+        height: 378px;
+        background-color: lightskyblue;
+    }
+    
+    .ball {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        border-radius: 50%;
+        animation: sliding 1s ease-in-out 0.5s infinite alternate;
+        animation-play-state: running;
+        position: relative;
+    }
+</style>
+
+<body>
+    <h1>This is my first animation</h1>
+    <div class="stage">
+
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>
